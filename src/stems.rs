@@ -26,7 +26,7 @@ impl<'a> Stems<'a> {
     pub fn new(text: &str) -> Stems {
         Stems {
             words: text.split_word_bound_indices(),
-            stemmer: Stemmer::new("english").unwrap(),
+            stemmer: Stemmer::new("german").unwrap(),
             word_position: 0,
         }
     }
